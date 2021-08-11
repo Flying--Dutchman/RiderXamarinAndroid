@@ -20,7 +20,10 @@ https://dev.azure.com/xamarin/public/_build?definitionId=48&_a=summary
 6. If possible install using your package manager. <br>
 6.1 **Arch Linux users**: You can install the .deb package using "debtap"<br>
 6.2 debtap -U < deb_file ><br>
-6.3 When asked to edit the .PGKINFO file, do so with your favourite editor and remove any invalid, or not needed dependency. (In my case I removed c, c0 and java8-sdk)
+6.3 When asked to edit the .PGKINFO file, do so with your favourite editor and remove any invalid, or not needed dependency. (In my case I removed c, c0 and java8-sdk)<br>
+7. **If no package manager is available** (not recommended):<br>
+7.1 Unzip the .deb file and unzip the containing data file. <br>
+7.2 Copy all the files to their respective folder on your drive.
 
 # 3. Android Studio
 1. Open Android Studio
@@ -35,7 +38,8 @@ https://dev.azure.com/xamarin/public/_build?definitionId=48&_a=summary
 4.6 Android SDK Platform-Tools
 
 # 4. Rider
-1. In your Rider settings, search for "Android" and set the following fields:<br>
+1. In your Rider settings, search for "Android" and set the following fields (should be under "Build, Execution, Deployment" --> "Android"):<br>
 1.1 Android SDK Location (e.g. /home/user/Android/Sdk)<br>
 1.2 Android NDK Location (e.g. /home/user/Android/Sdk/ndk/< version >)<br>
 1.3 Java Development Kit Location (e.g. /usr/lib/jvm/java-11-adoptopenjdk)
+2. Also check your mono and dotnet settings, search for "Mono" (should be under "Build, Execution, Deployment" --> "Toolset and Build".
