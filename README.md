@@ -43,3 +43,9 @@ https://dev.azure.com/xamarin/public/_build?definitionId=48&_a=summary
 1.2 Android NDK Location (e.g. /home/user/Android/Sdk/ndk/< version >)<br>
 1.3 Java Development Kit Location (e.g. /usr/lib/jvm/java-11-adoptopenjdk)
 2. Also check your mono and dotnet settings, search for "Mono" (should be under "Build, Execution, Deployment" --> "Toolset and Build".
+
+# Troubleshooting
+## Crashing while debugging
+1. `fast deployment` is turned off or log contains `fpctx->head.magic == FPSIMD_MAGIC' not met` <br>
+1.1 Add or replace the following line in your Android.csproj file:\
+`<AndroidSupportedAbis>x86;x86_64;armeabi-v7a;arm64-v8a</AndroidSupportedAbis>`
