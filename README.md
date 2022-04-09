@@ -21,6 +21,7 @@ https://dev.azure.com/xamarin/public/_build?definitionId=48&_a=summary
 6.1 **Arch Linux users**: You can install the .deb package using "debtap"<br>
 6.2 debtap -U < deb_file ><br>
 6.3 When asked to edit the .PGKINFO file, do so with your favourite editor and remove any invalid, or not needed dependency. (In my case I removed c, c0 and java8-sdk)<br>
+6.4 Install the created *.zst file
 7. **If no package manager is available** (not recommended):<br>
 7.1 Unzip the .deb file and unzip the containing data file. <br>
 7.2 Copy all the files to their respective folder on your drive.
