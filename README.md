@@ -1,8 +1,11 @@
 # Rider Xamarin.Android
 This is a step-by-step guide on how to install Xamarin.Android on your Linux system.
+
+<br><br>
 This guide has initially been written for Manjaro Linux, as I am now moving to Fedora I noticed missing, incomplete or outdated mono packages.
 I will update this README accordingly.
-For now @Fedora users: 
+
+@Fedora users: 
 - Do not use the standard packages from Gnome-Software or dnf
 - Use the official steps from the mono project and stick to the preview package: https://www.mono-project.com/download/preview/#download-lin-fedora
 - Not tested, but you should be able to install the .deb package (step 2) using dpkg
