@@ -17,7 +17,7 @@ sudo -- sh -c "sudo pacman-key --init && sudo pacman-key --recv-key FBA220DFC880
 
 4. Install packages
 ```
-sudo pacman -Sy chaotic-aur/yay community/mono-msbuild libxtst chaotic-aur/android-studio fakeroot extra/jdk11-openjdk community/dotnet-sdk-6.0 chaotic-aur/rider --noconfirm && yay -S xamarin-android --noconfirm
+sudo pacman -Sy chaotic-aur/yay community/mono-msbuild libxtst chaotic-aur/android-studio fakeroot extra/jdk11-openjdk extra/libxcursor extra/libxcomposite extra/flac extra/lame extra/libasyncns extra/libogg extra/libsndfile extra/libvorbis extra/mpg123 extra/opus extra/libpulse community/dotnet-sdk-6.0 chaotic-aur/rider --noconfirm && yay -S xamarin-android --noconfirm
 ```
 
 5. Within Rider, download the Android SDK and set the correct paths (Android SDK+NDK and Java)
@@ -36,6 +36,10 @@ You can use [alacarte](https://gitlab.gnome.org/GNOME/alacarte) to easily add Ri
 ![image](https://user-images.githubusercontent.com/56829222/226169688-d0f696fc-2272-45d0-aa9e-66df4981dafe.png)
 
 # Troubleshooting
+## Emulator won't start
+Make sure to start your emulator using software rendering. 
+Edit your emulator, and set "Graphics" under "Emulated Performance" to "Software - GLES 2.0"
+ 
 ## Crashing while debugging
 1. `fast deployment` is turned off or log contains `fpctx->head.magic == FPSIMD_MAGIC' not met` <br>
 1.1 Add or replace the following line in your Android.csproj file:\
