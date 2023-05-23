@@ -1,5 +1,6 @@
 # Rider Xamarin.Android
 This is a step-by-step guide on how to install Xamarin.Android on any Linux distro, using [DistroBox](https://github.com/89luca89/distrobox).
+Note: The 'rider' package has been removed in Chaotic-AUR, therefore we will be installing the 'JetBrains Toolbox' for easier update management. Be sure to quit any local installation of JetBrains Toolbox before following this guide.
 
 # QuickStart
 
@@ -17,10 +18,20 @@ sudo -- sh -c "sudo pacman-key --init && sudo pacman-key --recv-key FBA220DFC880
 
 4. Install packages
 ```
-sudo pacman -Sy chaotic-aur/yay community/mono-msbuild libxtst chaotic-aur/android-studio fakeroot extra/jdk11-openjdk extra/libxcursor extra/libxcomposite extra/flac extra/lame extra/libasyncns extra/libogg extra/libsndfile extra/libvorbis extra/mpg123 extra/opus extra/libpulse community/dotnet-sdk-6.0 chaotic-aur/rider --noconfirm && yay -S xamarin-android --noconfirm
+sudo pacman -Sy chaotic-aur/yay extra/mono-msbuild libxtst fakeroot extra/jdk11-openjdk extra/libxcursor extra/libxcomposite extra/flac extra/lame extra/libasyncns extra/libogg extra/libsndfile extra/libvorbis extra/mpg123 extra/opus extra/libpulse extra/dotnet-sdk-6.0 chaotic-aur/jetbrains-toolbox --noconfirm && yay -S xamarin-android --noconfirm
 ```
 
-5. Within Rider, download the Android SDK and set the correct paths (Android SDK+NDK and Java)
+5. Start JetBrains Toolbox and install Rider. The toobox may display locally installed IDE's, this is normal.
+```
+jetbrains-toolbox
+```
+
+6. Start Rider
+```
+rider
+```
+
+7. Within Rider, download the Android SDK and set the correct paths (Android SDK+NDK and Java)
 
 # How to start Rider
 Simply start Rider, from your local shell, with the following command:
