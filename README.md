@@ -13,7 +13,7 @@ distrobox create -n archriderbox -i archlinux:latest && distrobox enter archride
 
 3. Add Chaotic AUR
 ```
-sudo -- sh -c "sudo pacman-key --init && sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key FBA220DFC880C036 && sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && { sudo echo '[chaotic-aur]' ; sudo echo 'Include = /etc/pacman.d/chaotic-mirrorlist'; } >>/etc/pacman.conf"
+sudo -- sh -c "sudo pacman-key --init && sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && { sudo echo '[chaotic-aur]' ; sudo echo 'Include = /etc/pacman.d/chaotic-mirrorlist'; } >>/etc/pacman.conf"
 ```
 
 4. Install packages
