@@ -28,7 +28,7 @@ yay -S xamarin-android --noconfirm
 4. Download and extract Rider (or the JetBrains Toolbox)
 
 ```
-cd ~/ && wget -O rider.zip https://download.jetbrains.com/rider/JetBrains.Rider-2023.1.3.tar.gz && tar -xf rider.zip && rm rider.zip && ln -s JetBrains\ Rider-2023.1.3/ Rider
+cd ~/ && curl --user-agent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" https://download.jetbrains.com/rider/JetBrains.Rider-2023.2.tar.gz -L -o ~/rider.tar.gz && tar -xf rider.tar.gz && rm rider.tar.gz && ln -sf JetBrains\ Rider-2023.2/ Rider
 ```
 
 5. Start Rider
